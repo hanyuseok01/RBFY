@@ -39,9 +39,15 @@ header .menu .right_menu {
     height: 90vh;
     overflow: hidden;
 }
-#main_visual .swiper-slide img {
+#main_visual .swiper-slide img:first-child {
+    display: none;
     max-width: 100%;
     height: 80vh;
+}
+#main_visual .swiper-slide img:nth-child(2) {
+    display: block;
+    width: 100%;
+    height: 100vh;
 }
 .swiper-slide .main_title .s_text {
     font-size: 20px;
@@ -199,11 +205,16 @@ header .util_link > a > img {
     overflow: hidden;
     position: relative;
 }
-#main_visual .swiper-slide img {
+#main_visual .swiper-slide img:first-child {
+    display: none;
     max-width: 100%;
 
 }
-
+#main_visual .swiper-slide img:nth-child(2) {
+    display: block;
+    width: 100%;
+    height: 80vh;
+}
 .swiper-slide .main_title .s_text {
     font-size: 15px;
 
